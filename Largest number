@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] nums = {4, 700, 857, 100};
+        int l = nums[0];  
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > l) {
+                l = nums[i];
+            }
+        }
+
+        System.out.println("The largest number is : " + l);
+    }
+}
