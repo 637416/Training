@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String line = sc.nextLine();
+        
+        String upper = line.toUpperCase();
+        String lower = line.toLowerCase();
+
+        System.out.println("Lowercase: " + lower);
+        System.out.println("Uppercase: " + upper);
+        
+        sc.close();
+    }
+}
+
