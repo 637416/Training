@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter an number : ");
+    int n = sc.nextInt();
+    int sq =0;
+    int sum = 0;
+    while(n>0){
+        int ld = n%10;
+        sq = ld*ld;
+        sum = sum+sq;
+        n = n/10;
+    }
+    System.out.println("The sum square is : "+sum);
+}
+}
