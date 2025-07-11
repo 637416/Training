@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the product price: ");
+        int n = sc.nextInt();
+
+        int[] costprice = {1000, 3500, 4500, 5000};
+        int[] sellprice = {2000, 3000, 5000, 15000};
+        int[] Gdate = {2, 3, 4, 5};
+        int[] Sdate = {2, 4, 5, 6};
+
+        // Profit calculation
+        for (int i = 0; i < costprice.length; i++) {
+            if (costprice[i] < sellprice[i]) {
+                System.out.println("The profit is: " + (sellprice[i] - costprice[i]));
+            } else {
+                System.out.println("No profit.");
+            }
+        }
+
+        // Matching dates and printing "0" profit
+        for (int i = 0; i < Gdate.length; i++) {
+            if (Gdate[i] == Sdate[i]) {
+                System.out.println("The profit is \"0\"");
+            }
+        }
+
+        sc.close();
+    }
+}
